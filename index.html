@@ -1,25 +1,198 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="fr"> 
+    <link rel="icon" href=
+    "https://cdn-icons-png.flaticon.com/512/633/633832.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css" >
+	<head> 
 
-    <head>
-        <meta charset="utf-8">
-        <title>Accuil AplioTv</title>
-        <link href="style.css" rel="stylesheet" />
-    </head>
+		<meta charset="utf-8">
+		<title>AplioTv</title>
+	</head> 
 
     <style>
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-image: url(ekukfA8P8D5gIvRzoZ2KkjOAjrB\ \(1\).jpg);
-            background-repeat: no-repeat;
-            backround
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: black;
+            
         }
-      </style>
+        .btn{
+            position: absolute;
+            top: 65%;
+            left: 3%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .btn2{
+            position: absolute;
+            top: 1px;
+            left: 90%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-size: 13px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
 
-    <body>
-    <div class="container">
-    <a href="youtube.com"><button class="btn">WATCH</button>
-    </div>
-    </body>
+        }
 
+        .BigText{
+            position: absolute;
+            top: 30%;
+            left: 3%;
+            width: 30%;
+            font-size: 300%;
+            color: white;
+        }
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: #7d0c0c;
+            border-radius: 10px;
+        }
+            .arcaneimg{
+            width: 1330px;
+            height: 750px;
+        }
+        .moviesection{
+            max-width: 900px;
+            text-transform: uppercase;
+            padding-left: 1%;
+            color: rgb(255, 255, 255);
+        }
+        hr.rounded{
+            border-top: 3px solid rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        .movieimg .myimages{
+            height: 500px;
+            width: 280px;
+        }
+        .movieimg .myimages img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            flex-wrap: wrap;
+        }
+        .movieimg{
+            float: left;
+            width: 30%;
+            padding: 15px;
+            max-width: max-content;
+            padding-left: 5px;
+        }
+        .moviecontainer::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .moviecontainer{
+            height: max-content;
+            width: max-content;
+        }
+        
+        .image {
+            width: 750px;
+            height: 350px;
+            padding: 250px;
+            
+        }
+        .ma {
+            color: #7d0c0c;
+            
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+    </style>
+
+	<body> 
+        <div class="container">
+            <a href="https://www.youtube.com/watch?v=4Ps6nV4wiCE&t=48s"><button class="btn">WATCH NOW</button></a>
+            <h1 class="BigText">Arcane : Time to get Jinxed</h1>
+            <button class="btn2">Sign In </button>
+
+            
+
+            <ul>
+                <li><a class="active" href="#Home">Home</a></li>
+                <li><a  href="#Movies">Movies</a></li>
+                <li><a  href="#Coming">Coming</a></li>
+                <li><a  href="#About">About</a></li>
+            
+            </ul>
+	                <img class ="arcaneimg " src="https://www.regarder-films.net/wp-content/uploads/2019/01/spider-man-new-generation_2.jpg" alt="Spider man new genaration">
+            <section class="moviesection">
+                <h2 class="ma-class">Popular Movies</h2>
+                <hr class="rounded">
+                <div class="moviecontainer" id="movies">
+                    <div class="movieimg">
+                        <div class="myimages">
+                            <a href="index 2.html"><img src="bullet train image du fond de vidéo.jpeg" alt="Bullet Train"></a>
+                        </div>
+                        <h2>Bullet Train</h2>
+                        <span>American | Japon </span>
+                    </div>
+                    <div class="movieimg">
+                        <div class="myimages">
+                            <a href="https://www.youtube.com/watch?v=u9Mv98Gr5pY"><img src="creed3.jpg" alt="creed3"></a>
+                        </div>
+                        <h2>Venom</h2>
+                        <span>Marvel | Heroes </span>
+                    </div>
+                    <div class="movieimg">
+                        <div class="myimages">
+                            <a href="https://www.youtube.com/watch?v=Div0iP65aZo"><img src="https://th.bing.com/th/id/R.5b1220bff123e5d7a0249e35a7c84727?rik=kxiyU4w8NOOZcg&riu=http%3a%2f%2ffr.web.img4.acsta.net%2fpictures%2f19%2f03%2f11%2f16%2f43%2f1722757.jpg&ehk=5FsTLhHZLur%2f4xWv4d60oZu%2bmbkCxB6hTPXkt%2foMz14%3d&risl=&pid=ImgRaw&r=0" alt="shazam"></a>
+                        </div>
+                        <h2>Logan</h2>
+                        <span>Marvel | Heroes </span>
+                    </div>
+                    <div class="movieimg">
+                        <div class="myimages">
+                            <a href="index 2.html"><img src="3.jpg" alt="Gangster"></a>
+                        </div>
+                        <h2>Aquaman</h2>
+                        <span>Dc Comic | Heroes </span>
+                    </div>
+                    
+
+                    <div class="movieimg">
+                        <div class="myimages">
+                            <!--<a href=""><img src="" alt=""></a>-->
+                        </div>
+                        
+                        <h2 class="ma"></h2>
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        
+	</body> 
 </html>
